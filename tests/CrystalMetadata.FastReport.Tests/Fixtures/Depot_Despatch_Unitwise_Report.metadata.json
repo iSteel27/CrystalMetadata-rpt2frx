@@ -1,0 +1,4951 @@
+{
+  "schemaVersion": "1.0",
+  "extractor": {
+    "version": "1.0.0.0",
+    "crystalRuntimeVersion": "13.0.2000.0 / RAS 13.0.2000.0",
+    "bitness": "x64",
+    "extractedAtUtc": "2026-09-24T08:42:05.117Z",
+    "durationMs": 1362
+  },
+  "units": {
+    "position": "twips",
+    "font": "points",
+    "twipsPerInch": 1440,
+    "twipsPerPoint": 20,
+    "twipsPerMm": 56.6929
+  },
+  "reportInfo": {
+    "reportName": "Depot_Despatch_Unitwise_Report",
+    "fileName": "Depot_Despatch_Unitwise_Report.rpt",
+    "filePath": "D:\\Work\\VMS_SOURCE_LATEST_UAT\\VMS_SOURCE\\Reports\\Depot_Despatch_Unitwise_Report.rpt",
+    "fileSizeBytes": 49152,
+    "createdUtc": "2026-08-19T09:09:48.890Z",
+    "modifiedUtc": "2026-08-19T09:09:48.890Z",
+    "reportFileVersion": "14.0",
+    "title": null,
+    "author": null,
+    "subject": null,
+    "comments": null,
+    "keywords": null,
+    "hasSavedData": true,
+    "selectDistinctRecords": null,
+    "recordSelectionFormula": "",
+    "groupSelectionFormula": "",
+    "isSubreport": false
+  },
+  "pageSetup": {
+    "paperOrientation": "Landscape",
+    "paperSize": "PaperLetter",
+    "printerName": null,
+    "pageWidthTwips": 15840,
+    "pageHeightTwips": 12240,
+    "margins": {
+      "leftTwips": 360,
+      "rightTwips": 360,
+      "topTwips": 360,
+      "bottomTwips": 360
+    },
+    "printableWidthTwips": 15120,
+    "printableHeightTwips": 11520,
+    "dissociatePageSizeFromPrinter": false
+  },
+  "dataSource": {
+    "connections": [
+      {
+        "id": "c1",
+        "serverName": "Reports",
+        "databaseName": "",
+        "userId": null,
+        "integratedSecurity": false,
+        "databaseDll": "crdb_adoplus.dll",
+        "provider": null,
+        "connectionType": "CRQE",
+        "logonProperties": {
+          "File Path ": "D:\\VMS_SOURCE\\App_code\\Reports\\ReportViewer.xsd",
+          "Internal Connection ID": "{8606c705-8850-4f4c-8510-0d4fce4fa50d}"
+        },
+        "attributes": {
+          "Database DLL": "crdb_adoplus.dll",
+          "QE_DatabaseName": "",
+          "QE_DatabaseType": "ADO.NET (XML)",
+          "QE_LogonProperties": {
+            "File Path ": "D:\\VMS_SOURCE\\App_code\\Reports\\ReportViewer.xsd",
+            "Internal Connection ID": "{8606c705-8850-4f4c-8510-0d4fce4fa50d}"
+          },
+          "QE_ServerDescription": "Reports",
+          "QE_SQLDB": false,
+          "SSO Enabled": false
+        }
+      }
+    ],
+    "tables": [
+      {
+        "alias": "Depot_Despatched_Unitwise_Rpt",
+        "name": "Depot_Despatched_Unitwise_Rpt",
+        "location": "Depot_Despatched_Unitwise_Rpt",
+        "qualifiedName": "Depot_Despatched_Unitwise_Rpt",
+        "kind": "Table",
+        "connectionId": "c1",
+        "commandText": null,
+        "commandParameters": [],
+        "fields": [
+          {
+            "name": "load_depot",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_depot}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 0,
+            "isUsedInReport": false,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "region",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.region}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "Depot",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.Depot}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "load_sku_code",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_sku_code}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "sku_desc",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.sku_desc}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "load_vend_unit",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_vend_unit}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 3,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "sku_uom",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.sku_uom}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 3,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "load_despatched_nop",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "NumberField",
+            "lengthBytes": 8,
+            "nullable": null,
+            "useCount": 4,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeNumberField",
+              "RasLength": 8
+            }
+          },
+          {
+            "name": "sku_volume",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.sku_volume}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "NumberField",
+            "lengthBytes": 8,
+            "nullable": null,
+            "useCount": 2,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeNumberField",
+              "RasLength": 8
+            }
+          },
+          {
+            "name": "Unit_Desc",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.Unit_Desc}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "load_yyyy",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_yyyy}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          },
+          {
+            "name": "load_mm",
+            "formulaName": "{Depot_Despatched_Unitwise_Rpt.load_mm}",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "lengthBytes": 131070,
+            "nullable": null,
+            "useCount": 1,
+            "isUsedInReport": true,
+            "headingText": null,
+            "raw": {
+              "RasType": "crFieldValueTypeStringField",
+              "RasLength": 131070
+            }
+          }
+        ],
+        "raw": {
+          "RasClassName": "CrystalReports.Table"
+        }
+      }
+    ],
+    "links": [],
+    "generatedSql": null
+  },
+  "parameters": [],
+  "formulas": [
+    {
+      "name": "LTR",
+      "formulaName": "{@LTR}",
+      "text": "If({Depot_Despatched_Unitwise_Rpt.sku_uom}=\"L\" or {Depot_Despatched_Unitwise_Rpt.sku_uom}=\"ML\")Then\r\n{Depot_Despatched_Unitwise_Rpt.sku_volume}*{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}\r\nelse\r\n0",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 3
+    },
+    {
+      "name": "KG",
+      "formulaName": "{@KG}",
+      "text": "If({Depot_Despatched_Unitwise_Rpt.sku_uom}<>\"L\" and {Depot_Despatched_Unitwise_Rpt.sku_uom}<>\"ML\")Then\r\n{Depot_Despatched_Unitwise_Rpt.sku_volume}*{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}\r\nelse\r\n0\r\n\r\n",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 3
+    },
+    {
+      "name": "TotLtr",
+      "formulaName": "{@TotLtr}",
+      "text": "whileprintingrecords;\r\nnumbervar totLtr;\r\ntotLtr:=totLtr+{@LTR}",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "TotKg",
+      "formulaName": "{@TotKg}",
+      "text": "whileprintingrecords;\r\nnumbervar totKg;\r\ntotKg:=totKg+{@KG}",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "Total_LTR",
+      "formulaName": "{@Total_LTR}",
+      "text": "whileprintingrecords;\r\nnumbervar totLtr;\r\ntotLtr",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "Total_KG",
+      "formulaName": "{@Total_KG}",
+      "text": "whileprintingrecords;\r\nnumbervar totKg;\r\ntotKg",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "ResetLtr",
+      "formulaName": "{@ResetLtr}",
+      "text": "whileprintingrecords;\r\nnumbervar totLtr;\r\n\r\ntotLtr:=0;",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "ResetKg",
+      "formulaName": "{@ResetKg}",
+      "text": "whileprintingrecords;\r\nnumbervar totKg;\r\n\r\ntotKg:=0;",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "TotNOP",
+      "formulaName": "{@TotNOP}",
+      "text": "whileprintingrecords;\r\nnumbervar totNop;\r\ntotNop:=totNop+{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "Total_Dsptchd_NOP",
+      "formulaName": "{@Total_Dsptchd_NOP}",
+      "text": "whileprintingrecords;\r\nnumbervar totNop;\r\ntotNop",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    },
+    {
+      "name": "ResetNOP",
+      "formulaName": "{@ResetNOP}",
+      "text": "whileprintingrecords;\r\nnumbervar totNop;\r\ntotNop:=0",
+      "syntax": "Crystal",
+      "valueType": "NumberField",
+      "useCount": 1
+    }
+  ],
+  "sqlExpressions": [],
+  "customFunctions": [],
+  "summaryFields": [],
+  "runningTotals": [
+    {
+      "name": "RTotal0",
+      "formulaName": "{#RTotal0}",
+      "operation": "Count",
+      "operationParameter": "0",
+      "summarizedField": "{Depot_Despatched_Unitwise_Rpt.load_vend_unit}",
+      "secondarySummarizedField": null,
+      "evaluationConditionType": "NoCondition",
+      "evaluationCondition": null,
+      "resetConditionType": "OnChangeOfGroup",
+      "resetCondition": "Group({Depot_Despatched_Unitwise_Rpt.load_vend_unit})",
+      "valueType": "Int32sField",
+      "raw": {
+        "EvaluationCondition": null,
+        "EvaluationConditionType": "NoCondition",
+        "Group": null,
+        "IsPercentageSummary": false,
+        "OperationParameter": 0,
+        "ResetConditionType": "OnChangeOfGroup",
+        "SecondarySummarizedField": null
+      }
+    }
+  ],
+  "groups": [
+    {
+      "index": 1,
+      "conditionField": "{Depot_Despatched_Unitwise_Rpt.load_vend_unit}",
+      "conditionFieldKind": "DatabaseField",
+      "sortDirection": "AscendingOrder",
+      "condition": "0",
+      "keepGroupTogether": null,
+      "repeatGroupHeader": null,
+      "customGroupNameFormula": null,
+      "specifiedOrderNames": [],
+      "topN": null,
+      "raw": {
+        "RasClassName": "CrystalReports.GroupOptions"
+      }
+    }
+  ],
+  "sortFields": [
+    {
+      "field": "{Depot_Despatched_Unitwise_Rpt.load_vend_unit}",
+      "direction": "AscendingOrder",
+      "sortType": "GroupSortField"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Area1",
+      "kind": "ReportHeader",
+      "groupIndex": null,
+      "sectionNames": [
+        "Section1"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": false,
+        "newPageBefore": true,
+        "newPageAfter": false,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "Area2",
+      "kind": "PageHeader",
+      "groupIndex": null,
+      "sectionNames": [
+        "Section2"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": true,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "GroupHeaderArea1",
+      "kind": "GroupHeader",
+      "groupIndex": 1,
+      "sectionNames": [
+        "GroupHeaderSection1"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "Area3",
+      "kind": "Detail",
+      "groupIndex": null,
+      "sectionNames": [
+        "Section3"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "GroupFooterArea1",
+      "kind": "GroupFooter",
+      "groupIndex": 1,
+      "sectionNames": [
+        "GroupFooterSection1"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "Area4",
+      "kind": "ReportFooter",
+      "groupIndex": null,
+      "sectionNames": [
+        "Section4"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": false,
+        "newPageBefore": false,
+        "newPageAfter": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    },
+    {
+      "name": "Area5",
+      "kind": "PageFooter",
+      "groupIndex": null,
+      "sectionNames": [
+        "Section5"
+      ],
+      "format": {
+        "suppress": false,
+        "keepTogether": true,
+        "newPageBefore": false,
+        "newPageAfter": true,
+        "printAtBottomOfPage": true,
+        "resetPageNumberAfter": false,
+        "hideForDrillDown": false,
+        "conditionFormulas": []
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Section1",
+      "kind": "ReportHeader",
+      "areaName": "Area1",
+      "groupIndex": null,
+      "indexInArea": 0,
+      "heightTwips": 220,
+      "heightPoints": 11.0,
+      "format": {
+        "suppress": true,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": []
+    },
+    {
+      "name": "Section2",
+      "kind": "PageHeader",
+      "areaName": "Area2",
+      "groupIndex": null,
+      "indexInArea": 0,
+      "heightTwips": 2040,
+      "heightPoints": 102.0,
+      "format": {
+        "suppress": false,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": [
+        {
+          "name": "Picture1",
+          "kind": "Picture",
+          "sectionName": "Section2",
+          "zIndex": 0,
+          "leftTwips": 240,
+          "topTwips": 240,
+          "widthTwips": 1392,
+          "heightTwips": 900,
+          "rightTwips": 1632,
+          "bottomTwips": 1140,
+          "leftPoints": 12.0,
+          "topPoints": 12.0,
+          "widthPoints": 69.6,
+          "heightPoints": 45.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "picture": {
+            "originalWidthTwips": 1740,
+            "originalHeightTwips": 1125,
+            "xScaling": 0.8,
+            "yScaling": 0.8,
+            "cropTwips": {
+              "left": null,
+              "top": null,
+              "right": null,
+              "bottom": null
+            },
+            "imageBytesAvailable": false
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.PictureObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "PrintDate1",
+          "kind": "Field",
+          "sectionName": "Section2",
+          "zIndex": 1,
+          "leftTwips": 14040,
+          "topTwips": 240,
+          "widthTwips": 840,
+          "heightTwips": 226,
+          "rightTwips": 14880,
+          "bottomTwips": 466,
+          "leftPoints": 702.0,
+          "topPoints": 12.0,
+          "widthPoints": 42.0,
+          "heightPoints": 11.3,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "RightAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 9.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "PrintDate",
+            "fieldKind": "SpecialVarField",
+            "fieldName": "PrintDate",
+            "tableAlias": null,
+            "valueType": "DateField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": {
+                "dayFormat": "LeadingZeroNumericDay",
+                "monthFormat": "LeadingZeroNumericMonth",
+                "yearFormat": "LongYear",
+                "dateOrder": null,
+                "separator": null,
+                "raw": {
+                  "DayFormat": "LeadingZeroNumericDay",
+                  "MonthFormat": "LeadingZeroNumericMonth",
+                  "YearFormat": "LongYear"
+                }
+              },
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text10",
+          "kind": "Text",
+          "sectionName": "Section2",
+          "zIndex": 2,
+          "leftTwips": 13440,
+          "topTwips": 240,
+          "widthTwips": 570,
+          "heightTwips": 240,
+          "rightTwips": 14010,
+          "bottomTwips": 480,
+          "leftPoints": 672.0,
+          "topPoints": 12.0,
+          "widthPoints": 28.5,
+          "heightPoints": 12.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "RightAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 9.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Date :",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentRight",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Date :",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "PageNofM1",
+          "kind": "Field",
+          "sectionName": "Section2",
+          "zIndex": 3,
+          "leftTwips": 13680,
+          "topTwips": 480,
+          "widthTwips": 1200,
+          "heightTwips": 226,
+          "rightTwips": 14880,
+          "bottomTwips": 706,
+          "leftPoints": 684.0,
+          "topPoints": 24.0,
+          "widthPoints": 60.0,
+          "heightPoints": 11.3,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "RightAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 9.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "PageNofM",
+            "fieldKind": "SpecialVarField",
+            "fieldName": "PageNofM",
+            "tableAlias": null,
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text11",
+          "kind": "Text",
+          "sectionName": "Section2",
+          "zIndex": 4,
+          "leftTwips": 0,
+          "topTwips": 960,
+          "widthTwips": 14880,
+          "heightTwips": 480,
+          "rightTwips": 14880,
+          "bottomTwips": 1440,
+          "leftPoints": 0.0,
+          "topPoints": 48.0,
+          "widthPoints": 744.0,
+          "heightPoints": 24.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 16.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Depot Despatch - Unitwise\t",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Depot Despatch - Unitwise\t",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 16.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text22",
+          "kind": "Text",
+          "sectionName": "Section2",
+          "zIndex": 5,
+          "leftTwips": 5040,
+          "topTwips": 1800,
+          "widthTwips": 1869,
+          "heightTwips": 240,
+          "rightTwips": 6909,
+          "bottomTwips": 2040,
+          "leftPoints": 252.0,
+          "topPoints": 90.0,
+          "widthPoints": 93.45,
+          "heightPoints": 12.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "RightAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Process Month : ",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentRight",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Process Month : ",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 10.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text21",
+          "kind": "Text",
+          "sectionName": "Section2",
+          "zIndex": 6,
+          "leftTwips": 5040,
+          "topTwips": 1440,
+          "widthTwips": 1869,
+          "heightTwips": 250,
+          "rightTwips": 6909,
+          "bottomTwips": 1690,
+          "leftPoints": 252.0,
+          "topPoints": 72.0,
+          "widthPoints": 93.45,
+          "heightPoints": 12.5,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "RightAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Process Year : ",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentRight",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Process Year : ",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 10.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "loadyyyy1",
+          "kind": "Field",
+          "sectionName": "Section2",
+          "zIndex": 7,
+          "leftTwips": 7080,
+          "topTwips": 1440,
+          "widthTwips": 1995,
+          "heightTwips": 221,
+          "rightTwips": 9075,
+          "bottomTwips": 1661,
+          "leftPoints": 354.0,
+          "topPoints": 72.0,
+          "widthPoints": 99.75,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.load_yyyy}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "load_yyyy",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "loadmm1",
+          "kind": "Field",
+          "sectionName": "Section2",
+          "zIndex": 8,
+          "leftTwips": 7080,
+          "topTwips": 1800,
+          "widthTwips": 1995,
+          "heightTwips": 221,
+          "rightTwips": 9075,
+          "bottomTwips": 2021,
+          "leftPoints": 354.0,
+          "topPoints": 90.0,
+          "widthPoints": 99.75,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.load_mm}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "load_mm",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 12000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "GroupHeaderSection1",
+      "kind": "GroupHeader",
+      "areaName": "GroupHeaderArea1",
+      "groupIndex": 1,
+      "indexInArea": 0,
+      "heightTwips": 1078,
+      "heightPoints": 53.9,
+      "format": {
+        "suppress": false,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": [
+        {
+          "name": "Text2",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 0,
+          "leftTwips": 480,
+          "topTwips": 840,
+          "widthTwips": 600,
+          "heightTwips": 221,
+          "rightTwips": 1080,
+          "bottomTwips": 1061,
+          "leftPoints": 24.0,
+          "topPoints": 42.0,
+          "widthPoints": 30.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "RTotal01",
+            "text": "Srl No."
+          },
+          "text": {
+            "text": "Srl No.",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Srl No.",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text3",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 1,
+          "leftTwips": 1320,
+          "topTwips": 840,
+          "widthTwips": 2640,
+          "heightTwips": 221,
+          "rightTwips": 3960,
+          "bottomTwips": 1061,
+          "leftPoints": 66.0,
+          "topPoints": 42.0,
+          "widthPoints": 132.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "loadskucode1",
+            "text": "SKU Code"
+          },
+          "text": {
+            "text": "SKU Code",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "SKU Code",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text4",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 2,
+          "leftTwips": 4200,
+          "topTwips": 840,
+          "widthTwips": 4080,
+          "heightTwips": 221,
+          "rightTwips": 8280,
+          "bottomTwips": 1061,
+          "leftPoints": 210.0,
+          "topPoints": 42.0,
+          "widthPoints": 204.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "skudesc1",
+            "text": "SKU Description"
+          },
+          "text": {
+            "text": "SKU Description",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "SKU Description",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text5",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 3,
+          "leftTwips": 8520,
+          "topTwips": 840,
+          "widthTwips": 840,
+          "heightTwips": 221,
+          "rightTwips": 9360,
+          "bottomTwips": 1061,
+          "leftPoints": 426.0,
+          "topPoints": 42.0,
+          "widthPoints": 42.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "skuuom1",
+            "text": "UOM"
+          },
+          "text": {
+            "text": "UOM",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "UOM",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text6",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 4,
+          "leftTwips": 9600,
+          "topTwips": 840,
+          "widthTwips": 1440,
+          "heightTwips": 221,
+          "rightTwips": 11040,
+          "bottomTwips": 1061,
+          "leftPoints": 480.0,
+          "topPoints": 42.0,
+          "widthPoints": 72.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "loaddespatchednop1",
+            "text": "NOP"
+          },
+          "text": {
+            "text": "NOP",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "NOP",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text7",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 5,
+          "leftTwips": 11280,
+          "topTwips": 840,
+          "widthTwips": 1560,
+          "heightTwips": 221,
+          "rightTwips": 12840,
+          "bottomTwips": 1061,
+          "leftPoints": 564.0,
+          "topPoints": 42.0,
+          "widthPoints": 78.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "LTR1",
+            "text": "LTR"
+          },
+          "text": {
+            "text": "LTR",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "LTR",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text8",
+          "kind": "FieldHeading",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 6,
+          "leftTwips": 13080,
+          "topTwips": 840,
+          "widthTwips": 1605,
+          "heightTwips": 221,
+          "rightTwips": 14685,
+          "bottomTwips": 1061,
+          "leftPoints": 654.0,
+          "topPoints": 42.0,
+          "widthPoints": 80.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "fieldHeading": {
+            "forFieldObjectName": "KG1",
+            "text": "KG"
+          },
+          "text": {
+            "text": "KG",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "KG",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldHeadingObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line1",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 7,
+          "leftTwips": 360,
+          "topTwips": 718,
+          "widthTwips": 14400,
+          "heightTwips": 0,
+          "rightTwips": 14760,
+          "bottomTwips": 718,
+          "leftPoints": 18.0,
+          "topPoints": 35.9,
+          "widthPoints": 720.0,
+          "heightPoints": 0.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "SingleLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 360,
+            "y1Twips": 718,
+            "x2Twips": 14760,
+            "y2Twips": 718,
+            "orientation": "Horizontal",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupHeaderSection1"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 718,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line3",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 8,
+          "leftTwips": 360,
+          "topTwips": 1078,
+          "widthTwips": 14400,
+          "heightTwips": 0,
+          "rightTwips": 14760,
+          "bottomTwips": 1078,
+          "leftPoints": 18.0,
+          "topPoints": 53.9,
+          "widthPoints": 720.0,
+          "heightPoints": 0.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "SingleLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 360,
+            "y1Twips": 1078,
+            "x2Twips": 14760,
+            "y2Twips": 1078,
+            "orientation": "Horizontal",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupHeaderSection1"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 1078,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line21",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 9,
+          "leftTwips": 360,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1684,
+          "rightTwips": 360,
+          "bottomTwips": 2402,
+          "leftPoints": 18.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 84.2,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 360,
+            "y1Twips": 718,
+            "x2Twips": 360,
+            "y2Twips": 360,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 360,
+            "Bottom": 360,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line22",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 10,
+          "leftTwips": 1200,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1335,
+          "rightTwips": 1200,
+          "bottomTwips": 2053,
+          "leftPoints": 60.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 66.75,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 1200,
+            "y1Twips": 718,
+            "x2Twips": 1200,
+            "y2Twips": 11,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 1200,
+            "Bottom": 11,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line23",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 11,
+          "leftTwips": 4080,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1335,
+          "rightTwips": 4080,
+          "bottomTwips": 2053,
+          "leftPoints": 204.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 66.75,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 4080,
+            "y1Twips": 718,
+            "x2Twips": 4080,
+            "y2Twips": 11,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 4080,
+            "Bottom": 11,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line24",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 12,
+          "leftTwips": 8400,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1335,
+          "rightTwips": 8400,
+          "bottomTwips": 2053,
+          "leftPoints": 420.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 66.75,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 8400,
+            "y1Twips": 718,
+            "x2Twips": 8400,
+            "y2Twips": 11,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 8400,
+            "Bottom": 11,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line25",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 13,
+          "leftTwips": 9480,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1684,
+          "rightTwips": 9480,
+          "bottomTwips": 2402,
+          "leftPoints": 474.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 84.2,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 9480,
+            "y1Twips": 718,
+            "x2Twips": 9480,
+            "y2Twips": 360,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 9480,
+            "Bottom": 360,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line27",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 14,
+          "leftTwips": 12960,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1684,
+          "rightTwips": 12960,
+          "bottomTwips": 2402,
+          "leftPoints": 648.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 84.2,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 12960,
+            "y1Twips": 718,
+            "x2Twips": 12960,
+            "y2Twips": 360,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 12960,
+            "Bottom": 360,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line28",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 15,
+          "leftTwips": 14760,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1684,
+          "rightTwips": 14760,
+          "bottomTwips": 2402,
+          "leftPoints": 738.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 84.2,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 14760,
+            "y1Twips": 718,
+            "x2Twips": 14760,
+            "y2Twips": 360,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 360,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line29",
+          "kind": "Line",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 16,
+          "leftTwips": 11160,
+          "topTwips": 718,
+          "widthTwips": 0,
+          "heightTwips": 1684,
+          "rightTwips": 11160,
+          "bottomTwips": 2402,
+          "leftPoints": 558.0,
+          "topPoints": 35.9,
+          "widthPoints": 0.0,
+          "heightPoints": 84.2,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 11160,
+            "y1Twips": 718,
+            "x2Twips": 11160,
+            "y2Twips": 360,
+            "orientation": "Vertical",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 11160,
+            "Bottom": 360,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Box1",
+          "kind": "Box",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 17,
+          "leftTwips": 360,
+          "topTwips": 718,
+          "widthTwips": 14400,
+          "heightTwips": 359,
+          "rightTwips": 14760,
+          "bottomTwips": 1077,
+          "leftPoints": 18.0,
+          "topPoints": 35.9,
+          "widthPoints": 720.0,
+          "heightPoints": 17.95,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "SingleLine",
+            "top": "SingleLine",
+            "bottom": "SingleLine",
+            "borderColor": "#000000",
+            "backgroundColor": "#C0C0C0",
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "box": {
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "lineColor": "#000000",
+            "fillColor": "#C0C0C0",
+            "cornerEllipseWidthTwips": 0,
+            "cornerEllipseHeightTwips": 0,
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupHeaderSection1"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 1077,
+            "RasClassName": "CrystalReports.BoxObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "region1",
+          "kind": "Field",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 18,
+          "leftTwips": 360,
+          "topTwips": 240,
+          "widthTwips": 360,
+          "heightTwips": 221,
+          "rightTwips": 720,
+          "bottomTwips": 461,
+          "leftPoints": 18.0,
+          "topPoints": 12.0,
+          "widthPoints": 18.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.region}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "region",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Depot1",
+          "kind": "Field",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 19,
+          "leftTwips": 720,
+          "topTwips": 240,
+          "widthTwips": 1200,
+          "heightTwips": 221,
+          "rightTwips": 1920,
+          "bottomTwips": 461,
+          "leftPoints": 36.0,
+          "topPoints": 12.0,
+          "widthPoints": 60.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.Depot}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "Depot",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "UnitDesc1",
+          "kind": "Field",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 20,
+          "leftTwips": 2760,
+          "topTwips": 240,
+          "widthTwips": 2415,
+          "heightTwips": 221,
+          "rightTwips": 5175,
+          "bottomTwips": 461,
+          "leftPoints": 138.0,
+          "topPoints": 12.0,
+          "widthPoints": 120.75,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.Unit_Desc}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "Unit_Desc",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text9",
+          "kind": "Text",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 21,
+          "leftTwips": 1920,
+          "topTwips": 240,
+          "widthTwips": 720,
+          "heightTwips": 221,
+          "rightTwips": 2640,
+          "bottomTwips": 461,
+          "leftPoints": 96.0,
+          "topPoints": 12.0,
+          "widthPoints": 36.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Source : ",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Source : ",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Box2",
+          "kind": "Box",
+          "sectionName": "GroupHeaderSection1",
+          "zIndex": 22,
+          "leftTwips": 240,
+          "topTwips": 120,
+          "widthTwips": 5040,
+          "heightTwips": 407,
+          "rightTwips": 5280,
+          "bottomTwips": 527,
+          "leftPoints": 12.0,
+          "topPoints": 6.0,
+          "widthPoints": 252.0,
+          "heightPoints": 20.35,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "SingleLine",
+            "right": "SingleLine",
+            "top": "SingleLine",
+            "bottom": "SingleLine",
+            "borderColor": "#000000",
+            "backgroundColor": "#C0C0C0",
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "box": {
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "lineColor": "#000000",
+            "fillColor": "#C0C0C0",
+            "cornerEllipseWidthTwips": 105,
+            "cornerEllipseHeightTwips": 105,
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupHeaderSection1"
+          },
+          "raw": {
+            "Right": 5280,
+            "Bottom": 527,
+            "RasClassName": "CrystalReports.BoxObject",
+            "RasSectionCode": 18000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Section3",
+      "kind": "Detail",
+      "areaName": "Area3",
+      "groupIndex": null,
+      "indexInArea": 0,
+      "heightTwips": 364,
+      "heightPoints": 18.2,
+      "format": {
+        "suppress": false,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": [
+        {
+          "name": "RTotal01",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 0,
+          "leftTwips": 480,
+          "topTwips": 120,
+          "widthTwips": 600,
+          "heightTwips": 221,
+          "rightTwips": 1080,
+          "bottomTwips": 341,
+          "leftPoints": 24.0,
+          "topPoints": 6.0,
+          "widthPoints": 30.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{#RTotal0}",
+            "fieldKind": "RunningTotalField",
+            "fieldName": "RTotal0",
+            "tableAlias": null,
+            "valueType": "Int32sField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 0,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "Bracketed",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToUnit",
+                "raw": {
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "DecimalPlaces": 0,
+                  "EnableUseLeadingZero": true,
+                  "NegativeFormat": "Bracketed",
+                  "RoundingFormat": "RoundToUnit"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "loadskucode1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 1,
+          "leftTwips": 1320,
+          "topTwips": 120,
+          "widthTwips": 2640,
+          "heightTwips": 221,
+          "rightTwips": 3960,
+          "bottomTwips": 341,
+          "leftPoints": 66.0,
+          "topPoints": 6.0,
+          "widthPoints": 132.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.load_sku_code}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "load_sku_code",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "skudesc1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 2,
+          "leftTwips": 4200,
+          "topTwips": 120,
+          "widthTwips": 4080,
+          "heightTwips": 221,
+          "rightTwips": 8280,
+          "bottomTwips": 341,
+          "leftPoints": 210.0,
+          "topPoints": 6.0,
+          "widthPoints": 204.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.sku_desc}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "sku_desc",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "skuuom1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 3,
+          "leftTwips": 8520,
+          "topTwips": 120,
+          "widthTwips": 840,
+          "heightTwips": 221,
+          "rightTwips": 9360,
+          "bottomTwips": 341,
+          "leftPoints": 426.0,
+          "topPoints": 6.0,
+          "widthPoints": 42.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.sku_uom}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "sku_uom",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "StringField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": null,
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "LTR1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 4,
+          "leftTwips": 11280,
+          "topTwips": 120,
+          "widthTwips": 1560,
+          "heightTwips": 221,
+          "rightTwips": 12840,
+          "bottomTwips": 341,
+          "leftPoints": 564.0,
+          "topPoints": 6.0,
+          "widthPoints": 78.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": [
+              {
+                "type": "EnableSuppress",
+                "text": "{@LTR}=0"
+              }
+            ]
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@LTR}",
+            "fieldKind": "FormulaField",
+            "fieldName": "LTR",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "KG1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 5,
+          "leftTwips": 13080,
+          "topTwips": 120,
+          "widthTwips": 1605,
+          "heightTwips": 221,
+          "rightTwips": 14685,
+          "bottomTwips": 341,
+          "leftPoints": 654.0,
+          "topPoints": 6.0,
+          "widthPoints": 80.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": [
+              {
+                "type": "EnableSuppress",
+                "text": "{@KG}=0"
+              }
+            ]
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@KG}",
+            "fieldKind": "FormulaField",
+            "fieldName": "KG",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line2",
+          "kind": "Line",
+          "sectionName": "Section3",
+          "zIndex": 6,
+          "leftTwips": 360,
+          "topTwips": 362,
+          "widthTwips": 14400,
+          "heightTwips": 0,
+          "rightTwips": 14760,
+          "bottomTwips": 362,
+          "leftPoints": 18.0,
+          "topPoints": 18.1,
+          "widthPoints": 720.0,
+          "heightPoints": 0.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "SingleLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 360,
+            "y1Twips": 362,
+            "x2Twips": 14760,
+            "y2Twips": 362,
+            "orientation": "Horizontal",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "Section3"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 362,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "TotLtr1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 7,
+          "leftTwips": 11160,
+          "topTwips": 120,
+          "widthTwips": 1005,
+          "heightTwips": 221,
+          "rightTwips": 12165,
+          "bottomTwips": 341,
+          "leftPoints": 558.0,
+          "topPoints": 6.0,
+          "widthPoints": 50.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@TotLtr}",
+            "fieldKind": "FormulaField",
+            "fieldName": "TotLtr",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 2,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 2,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "TotKg1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 8,
+          "leftTwips": 12960,
+          "topTwips": 120,
+          "widthTwips": 885,
+          "heightTwips": 221,
+          "rightTwips": 13845,
+          "bottomTwips": 341,
+          "leftPoints": 648.0,
+          "topPoints": 6.0,
+          "widthPoints": 44.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@TotKg}",
+            "fieldKind": "FormulaField",
+            "fieldName": "TotKg",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 2,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 2,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "TotNOP1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 9,
+          "leftTwips": 9480,
+          "topTwips": 120,
+          "widthTwips": 885,
+          "heightTwips": 221,
+          "rightTwips": 10365,
+          "bottomTwips": 341,
+          "leftPoints": 474.0,
+          "topPoints": 6.0,
+          "widthPoints": 44.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@TotNOP}",
+            "fieldKind": "FormulaField",
+            "fieldName": "TotNOP",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "loaddespatchednop1",
+          "kind": "Field",
+          "sectionName": "Section3",
+          "zIndex": 10,
+          "leftTwips": 9600,
+          "topTwips": 120,
+          "widthTwips": 1440,
+          "heightTwips": 221,
+          "rightTwips": 11040,
+          "bottomTwips": 341,
+          "leftPoints": 480.0,
+          "topPoints": 6.0,
+          "widthPoints": 72.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": true,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}",
+            "fieldKind": "DatabaseField",
+            "fieldName": "load_despatched_nop",
+            "tableAlias": "Depot_Despatched_Unitwise_Rpt",
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 0,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "Bracketed",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToUnit",
+                "raw": {
+                  "DecimalPlaces": 0,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "Bracketed",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToUnit"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 24000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "GroupFooterSection1",
+      "kind": "GroupFooter",
+      "areaName": "GroupFooterArea1",
+      "groupIndex": 1,
+      "indexInArea": 0,
+      "heightTwips": 360,
+      "heightPoints": 18.0,
+      "format": {
+        "suppress": false,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": [
+        {
+          "name": "TotalLTR1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 0,
+          "leftTwips": 11280,
+          "topTwips": 120,
+          "widthTwips": 1560,
+          "heightTwips": 221,
+          "rightTwips": 12840,
+          "bottomTwips": 341,
+          "leftPoints": 564.0,
+          "topPoints": 6.0,
+          "widthPoints": 78.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@Total_LTR}",
+            "fieldKind": "FormulaField",
+            "fieldName": "Total_LTR",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "TotalKG1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 1,
+          "leftTwips": 13050,
+          "topTwips": 120,
+          "widthTwips": 1620,
+          "heightTwips": 221,
+          "rightTwips": 14670,
+          "bottomTwips": 341,
+          "leftPoints": 652.5,
+          "topPoints": 6.0,
+          "widthPoints": 81.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@Total_KG}",
+            "fieldKind": "FormulaField",
+            "fieldName": "Total_KG",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text20",
+          "kind": "Text",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 2,
+          "leftTwips": 480,
+          "topTwips": 120,
+          "widthTwips": 510,
+          "heightTwips": 221,
+          "rightTwips": 990,
+          "bottomTwips": 341,
+          "leftPoints": 24.0,
+          "topPoints": 6.0,
+          "widthPoints": 25.5,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "LeftAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Total :",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentLeft",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Total :",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "ResetLtr1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 3,
+          "leftTwips": 1680,
+          "topTwips": 120,
+          "widthTwips": 885,
+          "heightTwips": 221,
+          "rightTwips": 2565,
+          "bottomTwips": 341,
+          "leftPoints": 84.0,
+          "topPoints": 6.0,
+          "widthPoints": 44.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@ResetLtr}",
+            "fieldKind": "FormulaField",
+            "fieldName": "ResetLtr",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "ResetKg1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 4,
+          "leftTwips": 2760,
+          "topTwips": 120,
+          "widthTwips": 885,
+          "heightTwips": 221,
+          "rightTwips": 3645,
+          "bottomTwips": 341,
+          "leftPoints": 138.0,
+          "topPoints": 6.0,
+          "widthPoints": 44.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@ResetKg}",
+            "fieldKind": "FormulaField",
+            "fieldName": "ResetKg",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 3,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "LeadingMinus",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToHundredth",
+                "raw": {
+                  "DecimalPlaces": 3,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "LeadingMinus",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToHundredth"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "TotalDsptchdNOP1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 5,
+          "leftTwips": 9600,
+          "topTwips": 120,
+          "widthTwips": 1440,
+          "heightTwips": 221,
+          "rightTwips": 11040,
+          "bottomTwips": 341,
+          "leftPoints": 480.0,
+          "topPoints": 6.0,
+          "widthPoints": 72.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@Total_Dsptchd_NOP}",
+            "fieldKind": "FormulaField",
+            "fieldName": "Total_Dsptchd_NOP",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 0,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "Bracketed",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToUnit",
+                "raw": {
+                  "DecimalPlaces": 0,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "Bracketed",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToUnit"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "ResetNOP1",
+          "kind": "Field",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 6,
+          "leftTwips": 3840,
+          "topTwips": 120,
+          "widthTwips": 885,
+          "heightTwips": 221,
+          "rightTwips": 4725,
+          "bottomTwips": 341,
+          "leftPoints": 192.0,
+          "topPoints": 6.0,
+          "widthPoints": 44.25,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": true,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 10.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "field": {
+            "dataSource": "{@ResetNOP}",
+            "fieldKind": "FormulaField",
+            "fieldName": "ResetNOP",
+            "tableAlias": null,
+            "valueType": "NumberField",
+            "fieldFormat": {
+              "suppressIfDuplicated": false,
+              "numeric": {
+                "decimalPlaces": 0,
+                "thousandsSeparator": null,
+                "thousandsSeparatorSymbol": null,
+                "decimalSymbol": null,
+                "currencySymbol": null,
+                "currencySymbolFormat": "NoSymbol",
+                "currencyPositionFormat": null,
+                "negativeFormat": "Bracketed",
+                "useLeadingZero": true,
+                "roundingFormat": "RoundToUnit",
+                "raw": {
+                  "DecimalPlaces": 0,
+                  "CurrencySymbolFormat": "NoSymbol",
+                  "NegativeFormat": "Bracketed",
+                  "EnableUseLeadingZero": true,
+                  "RoundingFormat": "RoundToUnit"
+                }
+              },
+              "date": null,
+              "time": null,
+              "dateTime": null,
+              "boolean": null,
+              "conditionFormulas": []
+            }
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.FieldObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Line31",
+          "kind": "Line",
+          "sectionName": "GroupFooterSection1",
+          "zIndex": 7,
+          "leftTwips": 360,
+          "topTwips": 356,
+          "widthTwips": 14400,
+          "heightTwips": 0,
+          "rightTwips": 14760,
+          "bottomTwips": 356,
+          "leftPoints": 18.0,
+          "topPoints": 17.8,
+          "widthPoints": 720.0,
+          "heightPoints": 0.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "DefaultAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "SingleLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": null,
+          "line": {
+            "x1Twips": 360,
+            "y1Twips": 356,
+            "x2Twips": 14760,
+            "y2Twips": 356,
+            "orientation": "Horizontal",
+            "lineStyle": "SingleLine",
+            "thicknessTwips": 20,
+            "color": "#000000",
+            "extendToBottomOfSection": false,
+            "endSectionName": "GroupFooterSection1"
+          },
+          "raw": {
+            "Right": 14760,
+            "Bottom": 356,
+            "RasClassName": "CrystalReports.LineObject",
+            "RasSectionCode": 30000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Section4",
+      "kind": "ReportFooter",
+      "areaName": "Area4",
+      "groupIndex": null,
+      "indexInArea": 0,
+      "heightTwips": 385,
+      "heightPoints": 19.25,
+      "format": {
+        "suppress": true,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": []
+    },
+    {
+      "name": "Section5",
+      "kind": "PageFooter",
+      "areaName": "Area5",
+      "groupIndex": null,
+      "indexInArea": 0,
+      "heightTwips": 720,
+      "heightPoints": 36.0,
+      "format": {
+        "suppress": false,
+        "suppressIfBlank": false,
+        "newPageBefore": false,
+        "newPageAfter": false,
+        "keepTogether": true,
+        "printAtBottomOfPage": false,
+        "resetPageNumberAfter": false,
+        "underlayFollowingSections": false,
+        "backgroundColor": "#FFFFFF",
+        "cssClass": null,
+        "conditionFormulas": []
+      },
+      "objects": [
+        {
+          "name": "Text28",
+          "kind": "Text",
+          "sectionName": "Section5",
+          "zIndex": 0,
+          "leftTwips": 120,
+          "topTwips": 120,
+          "widthTwips": 14880,
+          "heightTwips": 221,
+          "rightTwips": 15000,
+          "bottomTwips": 341,
+          "leftPoints": 6.0,
+          "topPoints": 6.0,
+          "widthPoints": 744.0,
+          "heightPoints": 11.05,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial Black",
+            "sizePoints": 8.0,
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "BERGER PAINTS INDIA LIMITED\n",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "BERGER PAINTS INDIA LIMITED",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial Black",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              },
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial Black",
+                      "sizePoints": 8.0,
+                      "bold": true,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 42000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        },
+        {
+          "name": "Text27",
+          "kind": "Text",
+          "sectionName": "Section5",
+          "zIndex": 1,
+          "leftTwips": 120,
+          "topTwips": 360,
+          "widthTwips": 14880,
+          "heightTwips": 240,
+          "rightTwips": 15000,
+          "bottomTwips": 600,
+          "leftPoints": 6.0,
+          "topPoints": 18.0,
+          "widthPoints": 744.0,
+          "heightPoints": 12.0,
+          "format": {
+            "suppress": false,
+            "canGrow": false,
+            "keepTogether": true,
+            "closeAtPageBreak": true,
+            "horizontalAlignment": "HorizontalCenterAlign",
+            "cssClass": null,
+            "hyperlinkType": null,
+            "hyperlinkText": null,
+            "conditionFormulas": []
+          },
+          "border": {
+            "left": "NoLine",
+            "right": "NoLine",
+            "top": "NoLine",
+            "bottom": "NoLine",
+            "borderColor": "#000000",
+            "backgroundColor": null,
+            "hasDropShadow": false,
+            "conditionFormulas": []
+          },
+          "font": {
+            "name": "Arial",
+            "sizePoints": 7.0,
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "strikeout": false,
+            "color": "#000000",
+            "conditionFormulas": []
+          },
+          "text": {
+            "text": "Berger House, 129 Park Street, Kolkata 700 017, Phone : 2229 9724-28, 2229 6005-06, Fax : 91-33-2249- 9009/9729, www.bergerpaints.com",
+            "paragraphs": [
+              {
+                "alignment": "crAlignmentHorizontalCenter",
+                "elements": [
+                  {
+                    "kind": "Text",
+                    "text": "Berger House, 129 Park Street, Kolkata 700 017, Phone : 2229 9724-28, 2229 6005-06, Fax : 91-33-2249- 9009/9729, www.bergerpaints.com",
+                    "dataSource": null,
+                    "font": {
+                      "name": "Arial",
+                      "sizePoints": 7.0,
+                      "bold": false,
+                      "italic": false,
+                      "underline": false,
+                      "strikeout": false,
+                      "color": "#000000",
+                      "conditionFormulas": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "raw": {
+            "RasClassName": "CrystalReports.TextObject",
+            "RasSectionCode": 42000,
+            "RasLinkedURI": null,
+            "RasReportPartBookmark": null
+          }
+        }
+      ]
+    }
+  ],
+  "subreports": [],
+  "derived": {
+    "columns": [
+      {
+        "header": "Srl No.",
+        "headerObjectName": "Text2",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "RTotal01",
+        "fieldDataSource": "{#RTotal0}",
+        "detailSectionName": "Section3",
+        "leftTwips": 480,
+        "widthTwips": 600,
+        "alignment": "HorizontalCenterAlign",
+        "numberFormat": {
+          "decimalPlaces": 0,
+          "thousandsSeparator": null,
+          "thousandsSeparatorSymbol": null,
+          "decimalSymbol": null,
+          "currencySymbol": null,
+          "currencySymbolFormat": "NoSymbol",
+          "currencyPositionFormat": null,
+          "negativeFormat": "Bracketed",
+          "useLeadingZero": true,
+          "roundingFormat": "RoundToUnit",
+          "raw": {
+            "CurrencySymbolFormat": "NoSymbol",
+            "DecimalPlaces": 0,
+            "EnableUseLeadingZero": true,
+            "NegativeFormat": "Bracketed",
+            "RoundingFormat": "RoundToUnit"
+          }
+        },
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "SKU Code",
+        "headerObjectName": "Text3",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "loadskucode1",
+        "fieldDataSource": "{Depot_Despatched_Unitwise_Rpt.load_sku_code}",
+        "detailSectionName": "Section3",
+        "leftTwips": 1320,
+        "widthTwips": 2640,
+        "alignment": "HorizontalCenterAlign",
+        "numberFormat": null,
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "SKU Description",
+        "headerObjectName": "Text4",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "skudesc1",
+        "fieldDataSource": "{Depot_Despatched_Unitwise_Rpt.sku_desc}",
+        "detailSectionName": "Section3",
+        "leftTwips": 4200,
+        "widthTwips": 4080,
+        "alignment": "HorizontalCenterAlign",
+        "numberFormat": null,
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "UOM",
+        "headerObjectName": "Text5",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "skuuom1",
+        "fieldDataSource": "{Depot_Despatched_Unitwise_Rpt.sku_uom}",
+        "detailSectionName": "Section3",
+        "leftTwips": 8520,
+        "widthTwips": 840,
+        "alignment": "HorizontalCenterAlign",
+        "numberFormat": null,
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "NOP",
+        "headerObjectName": "Text6",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "loaddespatchednop1",
+        "fieldDataSource": "{Depot_Despatched_Unitwise_Rpt.load_despatched_nop}",
+        "detailSectionName": "Section3",
+        "leftTwips": 9600,
+        "widthTwips": 1440,
+        "alignment": "HorizontalCenterAlign",
+        "numberFormat": {
+          "decimalPlaces": 0,
+          "thousandsSeparator": null,
+          "thousandsSeparatorSymbol": null,
+          "decimalSymbol": null,
+          "currencySymbol": null,
+          "currencySymbolFormat": "NoSymbol",
+          "currencyPositionFormat": null,
+          "negativeFormat": "Bracketed",
+          "useLeadingZero": true,
+          "roundingFormat": "RoundToUnit",
+          "raw": {
+            "DecimalPlaces": 0,
+            "CurrencySymbolFormat": "NoSymbol",
+            "NegativeFormat": "Bracketed",
+            "EnableUseLeadingZero": true,
+            "RoundingFormat": "RoundToUnit"
+          }
+        },
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "LTR",
+        "headerObjectName": "Text7",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "LTR1",
+        "fieldDataSource": "{@LTR}",
+        "detailSectionName": "Section3",
+        "leftTwips": 11280,
+        "widthTwips": 1560,
+        "alignment": "DefaultAlign",
+        "numberFormat": {
+          "decimalPlaces": 3,
+          "thousandsSeparator": null,
+          "thousandsSeparatorSymbol": null,
+          "decimalSymbol": null,
+          "currencySymbol": null,
+          "currencySymbolFormat": "NoSymbol",
+          "currencyPositionFormat": null,
+          "negativeFormat": "LeadingMinus",
+          "useLeadingZero": true,
+          "roundingFormat": "RoundToHundredth",
+          "raw": {
+            "DecimalPlaces": 3,
+            "CurrencySymbolFormat": "NoSymbol",
+            "NegativeFormat": "LeadingMinus",
+            "EnableUseLeadingZero": true,
+            "RoundingFormat": "RoundToHundredth"
+          }
+        },
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      },
+      {
+        "header": "KG",
+        "headerObjectName": "Text8",
+        "headerSectionName": "GroupHeaderSection1",
+        "fieldObjectName": "KG1",
+        "fieldDataSource": "{@KG}",
+        "detailSectionName": "Section3",
+        "leftTwips": 13080,
+        "widthTwips": 1605,
+        "alignment": "DefaultAlign",
+        "numberFormat": {
+          "decimalPlaces": 3,
+          "thousandsSeparator": null,
+          "thousandsSeparatorSymbol": null,
+          "decimalSymbol": null,
+          "currencySymbol": null,
+          "currencySymbolFormat": "NoSymbol",
+          "currencyPositionFormat": null,
+          "negativeFormat": "LeadingMinus",
+          "useLeadingZero": true,
+          "roundingFormat": "RoundToHundredth",
+          "raw": {
+            "DecimalPlaces": 3,
+            "CurrencySymbolFormat": "NoSymbol",
+            "NegativeFormat": "LeadingMinus",
+            "EnableUseLeadingZero": true,
+            "RoundingFormat": "RoundToHundredth"
+          }
+        },
+        "font": {
+          "name": "Arial",
+          "sizePoints": 8.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikeout": false,
+          "color": "#000000",
+          "conditionFormulas": []
+        }
+      }
+    ],
+    "bands": [
+      {
+        "sectionName": "Section1",
+        "kind": "ReportHeader",
+        "groupIndex": null,
+        "heightTwips": 220,
+        "objectCount": 0,
+        "isEmpty": true,
+        "isSuppressed": true
+      },
+      {
+        "sectionName": "Section2",
+        "kind": "PageHeader",
+        "groupIndex": null,
+        "heightTwips": 2040,
+        "objectCount": 9,
+        "isEmpty": false,
+        "isSuppressed": false
+      },
+      {
+        "sectionName": "GroupHeaderSection1",
+        "kind": "GroupHeader",
+        "groupIndex": 1,
+        "heightTwips": 1078,
+        "objectCount": 23,
+        "isEmpty": false,
+        "isSuppressed": false
+      },
+      {
+        "sectionName": "Section3",
+        "kind": "Detail",
+        "groupIndex": null,
+        "heightTwips": 364,
+        "objectCount": 11,
+        "isEmpty": false,
+        "isSuppressed": false
+      },
+      {
+        "sectionName": "GroupFooterSection1",
+        "kind": "GroupFooter",
+        "groupIndex": 1,
+        "heightTwips": 360,
+        "objectCount": 8,
+        "isEmpty": false,
+        "isSuppressed": false
+      },
+      {
+        "sectionName": "Section4",
+        "kind": "ReportFooter",
+        "groupIndex": null,
+        "heightTwips": 385,
+        "objectCount": 0,
+        "isEmpty": true,
+        "isSuppressed": true
+      },
+      {
+        "sectionName": "Section5",
+        "kind": "PageFooter",
+        "groupIndex": null,
+        "heightTwips": 720,
+        "objectCount": 2,
+        "isEmpty": false,
+        "isSuppressed": false
+      }
+    ]
+  },
+  "diagnostics": [],
+  "stats": {
+    "sectionCount": 7,
+    "objectCount": 53,
+    "formulaCount": 11,
+    "parameterCount": 0,
+    "tableCount": 1,
+    "subreportCount": 0,
+    "warningCount": 0,
+    "errorCount": 0
+  }
+}

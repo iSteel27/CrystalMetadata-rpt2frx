@@ -1,0 +1,27 @@
+<Project>
+  <!--
+    Shared build settings for every project in CrystalMetadata.sln.
+    CrystalAssemblyVersion / CrystalPublicKeyToken identify the installed SAP Crystal Reports runtime
+    (13.0.2000.0 = CR for VS SP 2x+ line). Override on the command line if a different SP is installed:
+      dotnet build -p:CrystalAssemblyVersion=13.0.4000.0
+  -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>CS1591;NU1603;NU1701</WarningsNotAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <Deterministic>true</Deterministic>
+    <Version>1.0.0</Version>
+    <Authors>ERP Reporting Migration</Authors>
+    <Product>CrystalMetadata</Product>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+
+    <CrystalAssemblyVersion Condition="'$(CrystalAssemblyVersion)' == ''">13.0.2000.0</CrystalAssemblyVersion>
+    <CrystalPublicKeyToken Condition="'$(CrystalPublicKeyToken)' == ''">692fbea5521e1304</CrystalPublicKeyToken>
+    <CrystalGacMsil>$(WINDIR)\assembly\GAC_MSIL</CrystalGacMsil>
+    <CrystalGac64>$(WINDIR)\assembly\GAC_64</CrystalGac64>
+  </PropertyGroup>
+</Project>

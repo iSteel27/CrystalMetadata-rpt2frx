@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RootNamespace>CrystalMetadata.Extractor</RootNamespace>
+    <Description>Crystal Reports metadata walkers (Engine API + in-process RAS API). .NET Framework only — the Crystal SDK does not run on .NET Core.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CrystalMetadata.Core\CrystalMetadata.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+    <PackageReference Include="PolySharp" Version="1.15.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <!--
+    SAP Crystal Reports runtime assemblies. Installed into the GAC by the CR runtime MSI; there is no NuGet package.
+    Engine/Shared are MSIL, the RAS interop assemblies are 64-bit only (hence PlatformTarget=x64).
+  -->
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGacMsil)\CrystalDecisions.CrystalReports.Engine\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGacMsil)\CrystalDecisions.Shared\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.ClientDoc\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.Controllers\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.DataDefModel\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.ReportDefModel\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.CommonObjectModel\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=$(CrystalAssemblyVersion), Culture=neutral, PublicKeyToken=$(CrystalPublicKeyToken)">
+      <HintPath>$(CrystalGac64)\CrystalDecisions.ReportAppServer.CommonControls\$(CrystalAssemblyVersion)__$(CrystalPublicKeyToken)\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

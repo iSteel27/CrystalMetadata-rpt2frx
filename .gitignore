@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+logs/
+installer/staging/
+installer/output/
+# generated conversions from real customer reports - do not commit
+out/
